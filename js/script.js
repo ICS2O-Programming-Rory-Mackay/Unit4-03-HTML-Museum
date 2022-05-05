@@ -1,5 +1,4 @@
 // Copyright 2022 Rory Mackay All rights reserved
-//
 // Created by: Rory Mackay
 // Created on: April 2022
 // This file contains the JS functions for index.html
@@ -7,7 +6,7 @@
 "use strict"
 
 /**
- * This function displays if the user is old enough to see certain types of movies on their own
+ * This function displays what type of admission the user qualifies for based on  age and day of week
  */
 function displayMessage () {
   const RATED_R = 18;
