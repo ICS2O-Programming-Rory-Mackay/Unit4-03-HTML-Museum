@@ -9,11 +9,10 @@
  * This function displays what type of admission the user qualifies for based on  age and day of week
  */
 function displayMessage () {
-  const RATED_R = 18;
-	const RATED_PG = 13;
-  const RATED_G = 10
-	// get user input for age
+  // get user input for age and day of week
 	let userAge = parseInt(document.getElementById('user-age').value)
+	let select = document.getElementById('days');
+	let day = select.options[select.selectedIndex].value;
   let message;
   	// if user age is equal to or above 18, display "You're old enough to see an R-rated movie by yourself, if you dare!"
 	if (userAge >= RATED_R) {
