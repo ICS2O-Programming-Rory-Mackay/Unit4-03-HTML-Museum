@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- Unit4-03-HTML Museum -->
+<html>
+  <head>
+  <!-- Metadata -->
+    <meta charset="utf-8">
+    <meta name="description" content="User Input, with JavaScript">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Me">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- For the favicon on this page -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav/favicon-16x16.png">
+    <link rel="manifest" href="./fav/site.webmanifest">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Move Checker</title>
+  </head>
+  <body>
+    <script src="./js/script.js"></script>
+    <h1>What type of movie can you see?</h1>
+		<h3>Use this program to find out what type of movie you are eligible to see on your own, based on your age.</h3>
+		<form action="javascript:displayMessage()">					
+			<label for="age">Enter age (years):</label>
+			<input type="number" step="1" min="0" max="130" id="user-age"><br><br>
+			<input type="submit" value="Calculate">
+		</form>
+    <br></br>
+		<img src="./images/Popcorn.webp" alt="Popcorn" width="20%" height="20%''">
+		</table>
+		<!-- Create a space where the user information will be displayed -->
+			<div id="message">
+			</div>
+		</div>
+  </body>
+</html>
