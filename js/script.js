@@ -14,7 +14,7 @@ function displayMessage () {
   // get user input for age and day of week
 	let userAge = parseInt(document.getElementById('user-age').value)
 	let select = document.getElementById('days');
-	let day = select.options[select.selectedIndex].value;
+	let days = select.options[select.selectedIndex].value;
   	// if user age is over 95 or less than 5, display "No need to pay, it's free for you!""
 	if (userAge > 95 || userAge < 5) {
 	  message = "No need to pay, it's free for you!"
