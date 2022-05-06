@@ -9,27 +9,23 @@
  * This function displays what type of admission the user qualifies for based on  age and day of week
  */
 function displayMessage () {
+    	// initialize variables
+	let message = "Please make a selection above."
   // get user input for age and day of week
 	let userAge = parseInt(document.getElementById('user-age').value)
 	let select = document.getElementById('days');
 	let day = select.options[select.selectedIndex].value;
-  let message;
-  	// if user age is equal to or above 18, display "You're old enough to see an R-rated movie by yourself, if you dare!"
-	if (userAge >= RATED_R) {
-	message = "You're old enough to see an R-rated movie by yourself, if you dare!"
+  	// if user age is over 95 or less than 5, display "No need to pay, it's free for you!""
+	if (userAge > 95 || userAge < 5) {
+	  message = "No need to pay, it's free for you!"
 	} 
-  // if user age is equal to or above 13, display "You can go to a PG-13 movie all by yourself!"
-	else if (userAge >= RATED_PG) {
-	message = "You can go to a PG-13 movie all by yourself!"
+  // if user age is 12 to 21 OR it is Tuesday or Thursday, display "You get the student discount!"
+	else if ((days == "tuesday") || (days == "thursday")         || (userAge <= 21 && userAge >= 12)) {
+	  message = "You get the student discount!"
 	} 
-  // if user age is equal to or above 10, display "You can go to a PG-13 movie all by yourself!"
-	else if (userAge >= RATED_G) {
-	message = "You can go to a G rated movie all by yourself!"
-	} 
-    
-	// otherwise display "You are probably too little to see any movie without parental supervision!"	
+	// otherwise display "Regular price for you!"	
 	else {
-	message = "You are probably too little to see any movie without parental supervision!"
+	  message = "Regular price for you!"
 	}
 
 // Displaying results
