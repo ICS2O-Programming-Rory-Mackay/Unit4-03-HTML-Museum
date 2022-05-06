@@ -23,11 +23,15 @@ function displayMessage () {
 	else if ((days == "tuesday") || (days == "thursday")         || (userAge <= 21 && userAge >= 12)) {
 	  message = "You get the student discount!"
 	} 
-	// otherwise display "Regular price for you!"	
-	else {
+	// if user age > 0 and equal or less than 120, display "Regular price for you!"	
+	else if (userAge > 0 && userAge <= 120) {
 	  message = "Regular price for you!"
 	}
 
+  // otherwise display "Regular price for you!"	
+	else {
+	  message = "Please enter info to proceed."
+	}
 // Displaying results
 document.getElementById("message").innerHTML = message
 }
